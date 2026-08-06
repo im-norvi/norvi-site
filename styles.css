@@ -1,5 +1,4 @@
-
-.hero{overflow:hidden}@import "tailwindcss";
+@import "tailwindcss";
 
 :root {
   --black: #070809;
@@ -33,7 +32,7 @@ h1, h2, h3 { font-weight: 900; letter-spacing: -0.075em; }
 .site-header nav a:hover, .text-link:hover, .site-footer a:hover { color: var(--red); }
 .menu-toggle { display: none; }
 
-.hero { position: relative; display: flex; min-height: max(700px, 100svh); align-items: end; padding: 9rem clamp(1.25rem, 5vw, 5.4rem) clamp(3.2rem, 6vw, 5.2rem); isolation: isolate; }
+.hero { position: relative; overflow: hidden; display: flex; min-height: max(700px, 100svh); align-items: end; padding: 9rem clamp(1.25rem, 5vw, 5.4rem) clamp(3.2rem, 6vw, 5.2rem); isolation: isolate; }
 .hero-photo, .hero-shade, .hero-mark-glow { position: absolute; inset: 0; pointer-events: none; }
 .hero-photo { z-index: -5; background: url("public/images/norvi/norvi-main.png") center center / cover no-repeat; transform: scale(1.035); animation: photoDrift 18s ease-in-out infinite alternate; }
 .hero-shade { z-index: -4; background: linear-gradient(180deg, rgba(3,7,10,.7) 0%, rgba(4,7,9,.05) 31%, rgba(4,6,8,.42) 61%, #030405 82%, #030405 100%), linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.12) 58%, rgba(0,0,0,.48) 100%); }
