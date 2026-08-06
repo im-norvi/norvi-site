@@ -1,4 +1,5 @@
-@import "tailwindcss";
+
+.hero{overflow:hidden}@import "tailwindcss";
 
 :root {
   --black: #070809;
